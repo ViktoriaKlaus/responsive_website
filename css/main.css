@@ -4,30 +4,42 @@ html, body {
     margin: 0;
     font-family: 'Didot';
 }
+
 html {
-    @font-face { font-family: 'Didot';
-        src: local ('Didot')
-             url('..schrift/TheanoDidot-Regular.ttf') format('truetype'); }
+
+@font-face {
+    font-family: 'Didot';
+    src: local ('Didot')
+url('..schrift/TheanoDidot-Regular.ttf') format('truetype');
+}
+
+}
+
+.container {
+    max-width: 1100px;
+    padding: 0 50px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
 }
 
 .nav {
+    display: flex;
+    justify-content: space-between;
     text-align: right;
     height: 100px;
     line-height: 70px;
     margin-top: 30px;
-    margin-right: 30px;
     padding-bottom: 20px;
-}
-.logo {
-    float: left;
-    margin: 0px 10px 0px 30px;
-    width: 5%;
 }
 
 }
 .menu {
     margin: 0 30px 0 0;
 }
+
 .menu a {
     clear: right;
     text-decoration: none;
@@ -47,50 +59,127 @@ label {
     width: 15px;
     float: right;
 }
+
 #toggle {
     display: none;
 }
 
-.main-section{
+.main-section {
+    position: relative;
     background-color: #EFEAEA;
 }
+
+.line{
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
 .icon {
     width: 5%;
 }
-@media only screen and (max-width: 500px) {
-    .logo {
-        float: left;
-        margin: 15px 10px 0px 30px;
-        width: 15%;
+
+.aufmacher {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10%;
+    padding-bottom: 50px;
+}
+
+.main-section-inner-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20%;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.main-section-text-margin{
+    position: relative;
+    right: -100px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon + .icon{
+    margin-left: 20px;
+}
+
+.wrapper-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        padding: 0 20px;
+    }
+
+    img{
+        margin: auto
+    }
+
+    .aufmacher {
+        grid-template-columns: 1fr;
+        grid-gap: 100px;
+        padding-bottom: 50px;
+    }
+
+    .main-section-inner-wrapper{
+        grid-template-columns: 1fr;
+        grid-gap: 300px;
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+
+    .main-section-text-margin{
+        position: relative;
+        right: 0;
     }
 
     label {
         display: block;
         cursor: pointer;
-        
     }
+
     .menu {
         text-align: right;
         width: 100%;
         display: none;
     }
+
     .menu a {
         display: block;
         border-bottom: 1px solid #EAEAEB;
         margin: 0;
-     
     }
+
     #toggle:checked + .menu {
         display: block;
+        position: absolute;
+        right: 30px;
+        top: 90px;
+        background: white;
+        z-index: 44;
+        width: 40%;
+        border: 1px solid grey;
     }
-    
-    
+
 }
-
-
-
-
-
 
 
 
