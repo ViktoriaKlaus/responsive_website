@@ -124,6 +124,7 @@ p{
 .section-reverse{
     display: flex;
     flex-direction: column;
+
 }
 
 footer {
@@ -163,6 +164,13 @@ footer {
     img{
         margin: auto
     }
+
+    .section-reverse{
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
 
     .aufmacher {
         grid-template-columns: 1fr;
