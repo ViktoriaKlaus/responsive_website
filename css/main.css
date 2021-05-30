@@ -87,15 +87,6 @@ p{
     background-color: #EFEAEA;
 }
 
-.line{
-    position: absolute;
-    height: 100%;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-}
-
 .aufmacher {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -241,24 +232,25 @@ footer {
             margin: 0px 0px 10px 0px;
         }
 
-    }
-    footer {
-        margin-top: 20px;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
+        footer {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
 
-
-    #toggle:checked + .menu {
-        display: block;
-        position: absolute;
-        right: 30px;
-        top: 90px;
-        background: white;
-        z-index: 44;
-        width: 40%;
-        border: 1px solid grey;
+        #toggle:checked + .menu {
+            display: block;
+            position: absolute;
+            right: 30px;
+            top: 90px;
+            background: white;
+            z-index: 44;
+            width: 40%;
+            border: 1px solid grey;
+        }
+    
+    
     }
 
 
