@@ -129,7 +129,9 @@ p{
 
 footer {
     margin-top: 20px;
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 .wrapper-icons {
@@ -239,6 +241,12 @@ footer {
             margin: 0px 0px 10px 0px;
         }
 
+    }
+    footer {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
     }
 
 
