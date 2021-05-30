@@ -129,9 +129,7 @@ p{
 
 footer {
     margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
 }
 
 .wrapper-icons {
@@ -243,10 +241,6 @@ footer {
 
     }
 
-
-    footer {
-        display: block;
-    }
 
     #toggle:checked + .menu {
         display: block;
